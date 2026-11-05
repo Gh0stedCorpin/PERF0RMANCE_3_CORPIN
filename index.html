@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Traffic Simulator</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="box">
+        <h1>Mini Traffic Simulator</h1>
+        <h2>Traffic Intersection</h2>
+
+        
+        <div class="road">
+            <div class="traffic-light">
+                <div id="red" class="circle"></div>
+                <div id="yellow" class="circle"></div>
+                <div id="green" class="circle"></div>
+            </div>
+            <div class="car1">🚗</div>
+            <div class="car2">🚌</div>
+        </div>
+
+        
+        <button onclick="stop()">STOP</button>
+        <button onclick="wait()">WAIT</button>
+        <button onclick="go()">GO</button>
+
+        
+        <h3 id="msg">Click a button</h3>
+
+        
+        <div class="form-container">
+            <h3>Vehicle Registration Form</h3>
+            
+            <label>Driver's Name:</label><br>
+            <input type="text" id="driver"><br>
+
+            <label>Vehicle Type:</label><br>
+            <select id="type">
+                <option>Car</option>
+                <option>Motorcycle</option>
+                <option>Bus</option>
+                <option>Truck</option>
+            </select><br>
+
+            <label>Destination:</label><br>
+            <select id="dest">
+                <option>North</option>
+                <option>South</option>
+                <option>East</option>
+                <option>West</option>
+            </select><br>
+
+            <label>Purpose of Travel:</label><br>
+            <select id="purpose">
+                <option>Personal</option>
+                <option>School</option>
+                <option>Business</option>
+            </select><br>
+
+            <button onclick="send()">REGISTER VEHICLE</button>
+            
+            <p id="result"></p>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
